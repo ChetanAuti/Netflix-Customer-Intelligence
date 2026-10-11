@@ -1,0 +1,10 @@
+{
+  "forward_30d": {
+    "positive_rate": 0.0317,
+    "cv_roc_auc": 0.5474
+  },
+  "forward_90d": {
+    "positive_rate": 0.0837,
+    "cv_roc_auc": 0.5619
+  }
+}

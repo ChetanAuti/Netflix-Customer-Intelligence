@@ -1,0 +1,48 @@
+{
+  "viewing_activity": {
+    "raw_rows": 66422,
+    "device_inconsistent_fixed": 10285,
+    "device_missing": 664,
+    "device_still_unknown": 1,
+    "completion_imputed": 531,
+    "watch_duration_minutes_outliers_capped": 161,
+    "watch_duration_minutes_cap_value": 163.0,
+    "session_duration_minutes_outliers_capped": 161,
+    "session_duration_minutes_cap_value": 178.0,
+    "session_lt_watch_fixed": 6068
+  },
+  "customers": {
+    "raw_rows": 8048,
+    "duplicates_removed": 48,
+    "country_missing_raw": 409,
+    "country_imputed_from_login_location": 409,
+    "country_still_unknown": 0,
+    "age_outliers_nulled": 21,
+    "age_imputed": 342,
+    "city_missing_filled_unknown": 483,
+    "language_missing_filled_country_mode": 251
+  },
+  "payments": {
+    "raw_rows": 110735,
+    "before_first_subscription_start": 0,
+    "subscription_id_resolved": 110735,
+    "amount_anomalies_replaced_with_segment_price": 1112
+  },
+  "support_tickets": {
+    "raw_rows": 6120,
+    "invalid_dates_set_null": 61,
+    "csat_null_unresolved_kept_null": 1528
+  },
+  "customer_feedback": {
+    "raw_rows": 5046,
+    "sentiment_relabelled_from_rating": 263
+  },
+  "orphan_rows_by_table": {
+    "subscriptions": 0,
+    "viewing": 0,
+    "payments": 0,
+    "tickets": 0,
+    "feedback": 0,
+    "churn": 0
+  }
+}

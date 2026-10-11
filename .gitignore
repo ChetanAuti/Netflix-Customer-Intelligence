@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+data/netflix.db
+.ipynb_checkpoints/
