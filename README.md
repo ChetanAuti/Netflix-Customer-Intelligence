@@ -25,7 +25,6 @@ An end-to-end customer analytics and AI platform built around a Netflix-style su
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [PostgreSQL Setup](#postgresql-setup)
-- [AI / LLM Setup](#ai--llm-setup)
 - [Running the Notebooks](#running-the-notebooks)
 - [Testing](#testing)
 - [Model Results](#model-results)
@@ -674,34 +673,6 @@ psql netflix -f database/sql_business_questions.sql
 ```bash
 streamlit run app/dashboard.py
 ```
-
----
-
-## AI / LLM Setup
-
-The AI features can use Claude through an Anthropic API key.
-
-Linux/macOS:
-
-```bash
-export ANTHROPIC_API_KEY=your_api_key_here
-```
-
-Windows PowerShell:
-
-```powershell
-$env:ANTHROPIC_API_KEY="your_api_key_here"
-```
-
-Optionally configure the model:
-
-```bash
-export LLM_MODEL=your_model_name
-```
-
-Without an API key, the project still provides deterministic/offline behavior for core AI Copilot functions, including built-in Text-to-SQL templates and evidence-based explanations/reports/RCA.
-
-**Never commit API keys to GitHub.**
 
 ---
 
